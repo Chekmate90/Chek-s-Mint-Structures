@@ -1,66 +1,57 @@
-# Mint
+# Chek's Mint Structures
 
-An empty datapack template for **Minecraft 26.1** set up to **replace vanilla structures**.
+**Chek's Mint Structures** is a vanilla-friendly datapack that redesigns Minecraft's classic structures while preserving their original purpose, scale, and identity.
 
-## Why this works
+Instead of replacing villages with large custom builds, this datapack reimagines existing structures as if they were updated by Mojang today. Every structure remains recognizable and functional while receiving improved architecture, detailing, and environmental integration.
 
-To replace a vanilla structure you don't "edit" it — you place a file at the **same
-resource location inside the `minecraft` namespace**, and your datapack wins (datapacks
-override the built-in vanilla pack). Every folder below mirrors a vanilla path.
+## Current Features
 
-## Install
+### Plains Village Overhaul
+![Village](https://cdn.modrinth.com/data/cached_images/fe66472f19829c1d54cf99c7cca99689a5e21e2d_0.webp)
+* 25+ redesigned Plains Village structures
+* Improved architectural variety
+* Enhanced interiors and exterior details
+* Original structure footprints and functionality preserved
 
-1. Drop the whole `Mint` folder into your world's `datapacks/` directory:
-   `.minecraft/saves/<world>/datapacks/Mint/`
-2. **Worldgen changes only apply to NEW worlds** (or freshly generated chunks).
-   Create a new world, or run `/reload` for non-worldgen tweaks.
-3. Verify it loaded with `/datapack list`.
+### Custom Village Paths
+![Roads](https://cdn.modrinth.com/data/cached_images/f6585eb5137efbec75ed26f718b4f6c1b6d33b0b_0.webp)~~~~
+* Redesigned path generation
+* Improved visual variety
+* Better integration with village layouts and terrain
 
-## Layout
+## Design Goals
 
-```
-Mint/
-├── pack.mcmeta                 # format declaration (see below)
-└── data/
-    └── minecraft/
-        ├── structure/          # .nbt building pieces (singular "structure")
-        └── worldgen/
-            ├── structure/       # structure definitions (what + where rules)
-            ├── structure_set/   # placement: spacing, separation, salt
-            ├── template_pool/   # jigsaw pools for villages/bastions/etc.
-            └── processor_list/  # block-swap rules for jigsaw pieces
-```
+Chek's Mint Structures follows three core principles:
 
-## How to replace a specific vanilla structure
+### Vanilla-Friendly
 
-Copy the vanilla file from the version jar (`assets`/`data` in
-`.minecraft/versions/<v>/<v>.jar`, or browse it on the [Minecraft Wiki](https://minecraft.wiki/w/Data_pack)),
-edit it, and save it to the matching path here. Examples:
+Structures are designed to match Minecraft's visual style and avoid overly detailed or unrealistic building techniques.
 
-| Goal | File to create |
-|------|----------------|
-| Change plains village houses | `data/minecraft/worldgen/template_pool/village/plains/houses.json` |
-| Swap a village building's blocks | `data/minecraft/structure/village/plains/houses/<name>.nbt` |
-| Rarer / denser villages | `data/minecraft/worldgen/structure_set/villages.json` |
-| Disable a structure entirely | override its `structure_set` with `"structures": []` |
-| Change which biomes a structure spawns in | `data/minecraft/worldgen/structure/<name>.json` |
+### Familiar
 
-## pack.mcmeta / format note (26.1)
+Villages remain instantly recognizable. Existing structure layouts, roles, and gameplay functions are preserved.
 
-Since 25w31a the format is declared with `min_format` / `max_format` (each a
-`[major, minor]` array) instead of the old single `pack_format` integer.
-The **data pack format for 26.1 is `101.1`**:
+### Enhanced
 
-```json
-{
-  "pack": {
-    "description": "Mint — vanilla structure replacement (26.1)",
-    "min_format": [101, 1],
-    "max_format": [101, 1]
-  }
-}
-```
+Buildings receive improved block palettes, architectural details, and environmental decoration while maintaining the feel of vanilla Minecraft.
 
-Widen `max_format` if you want the pack to load on later versions without the
-"incompatible" warning. Confirm the exact number for your build with `/version`
-in-game.
+## Why Download?
+
+If you enjoy Minecraft's original structures but feel they could use a visual refresh, this datapack aims to provide a more polished and immersive experience without changing the core gameplay.
+
+## Development Status
+
+This project is currently in beta.
+
+The current release focuses on Plains Villages, with additional village variants, structure overhauls, generation improvements, and further polishing planned for future updates.
+
+## Compatibility
+
+* Datapack only
+* Survival-friendly
+* Designed for vanilla Minecraft
+* Best experienced in newly generated chunks
+
+## Feedback
+
+This project is actively being developed. Feedback, bug reports, and suggestions are welcome and help shape future updates.
