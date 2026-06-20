@@ -240,7 +240,27 @@
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
         "location": "minecraft:village/plains/houses/plains_stable_1",
-        "processors": "minecraft:mossify_10_percent",
+        "processors": {
+          "processors": [
+            {
+              "processor_type": "minecraft:rule",
+              "rules": [
+                {
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "input_predicate": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:podzol"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:grass_block"
+                  }
+                }
+              ]
+            }
+          ]
+        },
         "projection": "rigid"
       },
       "weight": 2
@@ -250,7 +270,25 @@
         "element_type": "minecraft:legacy_single_pool_element",
         "location": "minecraft:village/plains/houses/plains_stable_2",
         "processors": {
-          "processors": []
+          "processors": [
+            {
+              "processor_type": "minecraft:rule",
+              "rules": [
+                {
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "input_predicate": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:podzol"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:grass_block"
+                  }
+                }
+              ]
+            }
+          ]
         },
         "projection": "rigid"
       },
@@ -279,7 +317,25 @@
         "element_type": "minecraft:legacy_single_pool_element",
         "location": "minecraft:village/plains/houses/plains_animal_pen_1",
         "processors": {
-          "processors": []
+          "processors": [
+            {
+              "processor_type": "minecraft:rule",
+              "rules": [
+                {
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "input_predicate": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:podzol"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:grass_block"
+                  }
+                }
+              ]
+            }
+          ]
         },
         "projection": "rigid"
       },
@@ -290,7 +346,25 @@
         "element_type": "minecraft:legacy_single_pool_element",
         "location": "minecraft:village/plains/houses/plains_animal_pen_2",
         "processors": {
-          "processors": []
+          "processors": [
+            {
+              "processor_type": "minecraft:rule",
+              "rules": [
+                {
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "input_predicate": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:podzol"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:grass_block"
+                  }
+                }
+              ]
+            }
+          ]
         },
         "projection": "rigid"
       },
@@ -301,7 +375,25 @@
         "element_type": "minecraft:legacy_single_pool_element",
         "location": "minecraft:village/plains/houses/plains_animal_pen_3",
         "processors": {
-          "processors": []
+          "processors": [
+            {
+              "processor_type": "minecraft:rule",
+              "rules": [
+                {
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "input_predicate": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:podzol"
+                  },
+                  "output_state": {
+                    "Name": "minecraft:grass_block"
+                  }
+                }
+              ]
+            }
+          ]
         },
         "projection": "rigid"
       },
