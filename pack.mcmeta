@@ -1,7 +1,7 @@
 {
   "pack": {
-    "description": "Mint — vanilla structure replacement (26.1)",
-    "min_format": [101, 1],
-    "max_format": [101, 1]
+    "description": "Mint — vanilla structure replacement (26.2)",
+    "min_format": [107, 1],
+    "max_format": [107, 1]
   }
 }

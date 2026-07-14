@@ -1,0 +1,51 @@
+{
+  "processors": [
+    {
+      "processor_type": "minecraft:rule",
+      "rules": [
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:azalea_leaves",
+            "probability": 0.4
+          },
+          "output_state": {
+            "Name": "minecraft:flowering_azalea_leaves",
+            "Properties": {
+              "persistent": "true"
+            }
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:dirt_path",
+            "probability": 0.85
+          },
+          "output_state": {
+            "Name": "minecraft:packed_mud"
+          }
+        },
+        {
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "input_predicate": {
+            "predicate_type": "minecraft:random_block_match",
+            "block": "minecraft:dirt_path",
+            "probability": 1
+          },
+          "output_state": {
+            "Name": "minecraft:coarse_dirt"
+          }
+        }
+      ]
+    }
+  ]
+}
